@@ -1,25 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Contact from "./components/Contact";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const name = "Okan";
+const avatar = "https://avatars.githubusercontent.com/u/69849516?s=400&v=4";
+const online = true;
+const App = () => {
+  return <Contact name={name} avatar={avatar} online={online}></Contact>;
+};
 
 export default App;
